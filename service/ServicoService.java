@@ -29,7 +29,7 @@ public class ServicoService {
 		if(servico.getValorPago()==null || servico.getValorPago()==0 || servico.getDataPagamento()==null) {
 			servico.setStatus(status:"pendente");
 		}else {
-			servico.setStatus(status:"pendente");
+			servico.setStatus(status:"realizado");
 		}
 			
 		return servicoRepository.saveAndFlush(servico);
